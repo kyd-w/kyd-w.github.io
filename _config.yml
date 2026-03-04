@@ -1,0 +1,23 @@
+---
+title: IT每日简报
+description: 每日IT、AI、Agent等行业的最新动态汇总
+theme: minima
+markdown: kramdown
+permalink: /:title/
+url: "https://kyd-w.github.io"
+baseurl: ""
+author:
+  name: kyd-w
+  email: kyd-w@example.com
+
+# 导航栏
+header_pages:
+  - about.md
+  - it-report.md
+
+# 社交链接
+github_username: kyd-w
+
+# 构建设置
+future: true
+show_excerpts: true
