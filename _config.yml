@@ -23,8 +23,8 @@ plugins:
   - jekyll-sitemap
 
 # 永久链接设置
-permalink: /:categories/:title/
-# 或者使用: /:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title.html
+# 或者使用: /:categories/:title/
 
 # 导航栏
 header_pages:
