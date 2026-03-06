@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "IT 每日简报 - 2026-03-06"
-date: 2026-03-06 14:11:04 +0800
+date: 2026-03-06 14:14:09 +0800
 categories: [简报]
 ---
 
 # IT 每日简报 - 2026-03-06
 
-> 生成时间：2026-03-06 14:11:04 +0800
+> 生成时间：2026-03-06 14:14:09 +0800
 > 数据时效：仅包含最近 7 天内的信息
 
 ---
@@ -60,11 +60,51 @@ categories: [简报]
 ## 数据来源
 
 - Wired - https://www.wired.com/
-- IT之家 - https://www.ithome.com/
 - MIT Technology Review - https://www.technologyreview.com/
 - TechCrunch - https://techcrunch.com/
-- 机器之心 - https://www.jiqizhixin.com/
+- The Verge - https://www.theverge.com/
+- Ars Technica - https://arstechnica.com/
+- VentureBeat - https://venturebeat.com/
+- Engadget - https://www.engadget.com/
+- Gizmodo - https://gizmodo.com/
+- Recode - https://www.vox.com/recode
+- IT之家 - https://www.ithome.com/
 - 36氪 - https://36kr.com/
+- 机器之心 - https://www.jiqizhixin.com/
+- 虎嗅 - https://www.huxiu.com/
+- 钛媒体 - https://www.tmtpost.com/
+- 爱范儿 - https://www.ifanr.com/
+- 雷锋网 - https://www.leiphone.com/
+- 极客公园 - https://www.geekpark.net/
+- InfoQ 中文 - https://www.infoq.cn/
+- AI News - https://artificialintelligence-news.com/
+- AI Trends - https://aitrends.com/
+- VentureBeat AI - https://venturebeat.com/category/ai/
+- OpenAI Blog - https://openai.com/blog/
+- Google AI Blog - https://ai.googleblog.com/
+- DeepMind Blog - https://deepmind.google/discover/blog/
+- Anthropic Blog - https://www.anthropic.com/news
+- Hugging Face Blog - https://huggingface.co/blog
+- MIT CSAIL - https://www.csail.mit.edu/
+- GitHub Blog - https://github.blog/
+- Hacker News - https://news.ycombinator.com/
+- Reddit r/Artificial - https://www.reddit.com/r/Artificial/
+- Reddit r/MachineLearning - https://www.reddit.com/r/MachineLearning/
+- Dev.to - https://dev.to/
+- Medium - AI - https://medium.com/tag/artificial-intelligence
+- EdSurge - https://www.edsurge.com/
+- EdTech Hub - https://edtechhub.org/
+- Education Week - https://www.edweek.org/
+- Inside Higher Ed - https://www.insidehighered.com/
+- 芥末堆 - https://www.jiemodui.com/
+- 鲸媒体 - https://www.jingmeiti.com/
+- 多鲸资本 - https://www.duojingcapital.com/
+- IEEE Spectrum - https://spectrum.ieee.org/
+- Robotics Business Review - https://www.roboticsbusinessreview.com/
+- The Robot Report - https://www.therobotreport.com/
+- Product Hunt - https://www.producthunt.com/
+- Y Combinator Blog - https://www.ycombinator.com/blog/
+- Tech in Asia - https://www.techinasia.com/
 
 ---
 
