@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "zh-CN" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <title>{{ page.title }} - {{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header>
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <nav>
+        {% for page in site.header_pages %}
+          <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+        {% endfor %}
+      </nav>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. Powered by <a href="https://jekyllrb.com">Jekyll</a> & <a href="https://pages.github.com">GitHub Pages</a>.</p>
+    </footer>
+  </body>
+</html>
