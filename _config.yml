@@ -1,0 +1,59 @@
+# 站点信息
+title: IT每日简报
+description: 每日IT、AI、Agent等行业的最新动态汇总
+lang: zh-CN
+
+# URL 配置
+url: "https://kyd-w.github.io"
+baseurl: ""
+# 如果你的仓库是 username.github.io，baseurl 留空
+# 如果你的仓库是 username.github.io/repo-name，baseurl 设为 "/repo-name"
+
+# 作者信息
+author:
+  name: kyd-w
+  email: kyd-w@example.com
+
+# Jekyll 配置
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 永久链接设置
+permalink: /:year/:month/:day/:title.html
+# 或者使用: /:categories/:title/
+
+# 导航栏
+header_pages:
+  - about.md
+
+# 社交链接
+github_username: kyd-w
+
+# 构建设置
+future: true
+show_excerpts: true
+
+# 排除文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - .gitignore
+  - LICENSE
+  - README.md
+  - scripts/
+
+# 时区设置
+timezone: Asia/Shanghai
+
+# 日期格式
+date_format: "%Y-%m-%d"
+
+# 分页设置（可选）
+# paginate: 5
+# paginate_path: "/page:num/"
