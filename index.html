@@ -1,40 +1,84 @@
----
-layout: home
-title: IT每日简报
----
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT每日简报</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .content {
+            color: #333;
+        }
+        .updates {
+            margin-top: 30px;
+        }
+        .updates h2 {
+            color: #007bff;
+            font-size: 1.2em;
+        }
+        .updates ul {
+            list-style: none;
+            padding: 0;
+        }
+        .updates li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .updates a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .updates a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>IT每日简报</h1>
+    <div class="meta">
+        <p>每日汇总 IT、AI、Agent 等行业的最新动态</p>
+        <p>更新时间：工作日早8:00</p>
+    </div>
+    
+    <div class="content">
+        <h2>📰 简介</h2>
+        <p>本站点是 IT 每日简报的展示平台，每日更新以下内容：</p>
+        <ol>
+            <li><strong>IT行业最新动态</strong> - 全球 IT 行业的重要新闻和趋势</li>
+            <li><strong>AI及机器人行业最新动态</strong> - 人工智能和机器人领域的最新进展</li>
+            <li><strong>Agent 热门 Skill</strong> - ClawHub 等技能市场的热门智能体技能</li>
+            <li><strong>GitHub 热门项目</strong> - GitHub 上的优秀开源项目推荐</li>
+            <li><strong>个人 OPC 优秀案例</strong> - One Person Company 利用 AI 智能体实现公司化运营的案例</li>
+            <li><strong>教育+AI 行业新产品</strong> - 教育科技领域的最新产品动态</li>
+        </ol>
+    </div>
 
-# IT 每日简报
+    <div class="updates">
+        <h2>📂 历史简报</h2>
+        <p>查看历史日报：<a href="https://github.com/kyd-w/kyd-w.github.io/tree/main/_posts">GitHub仓库</a></p>
+        <p>最新日报：<a href="/2026/06/22/it-daily-report.html">2026-06-22</a></p>
+    </div>
 
-> 每日汇总 IT、AI、Agent 等行业的最新动态
-
-## 📰 简介
-
-本站点是 IT 每日简报的展示平台，每日更新以下内容：
-
-1. **IT行业最新动态** - 全球 IT 行业的重要新闻和趋势
-2. **AI及机器人行业最新动态** - 人工智能和机器人领域的最新进展
-3. **Agent 热门 Skill** - ClawHub 等技能市场的热门智能体技能
-4. **GitHub 热门项目** - GitHub 上的优秀开源项目推荐
-5. **个人 OPC 优秀案例** - One Person Company（一人公司）利用 AI 智能体实现公司化运营的案例
-6. **教育+AI 行业新产品** - 教育科技领域的最新产品动态
-
-## 🌐 访问地址
-
-- **GitHub Pages**: https://kyd-w.github.io/
-
-## 📅 更新频率
-
-每日更新，工作日早8:00发布
-
-## 🔗 历史简报
-
-{% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%Y-%m-%d" }}
-{% endfor %}
-
-## 📧 联系方式
-
-如有问题或建议，欢迎通过以下方式联系：
-
-- GitHub: https://github.com/kyd-w
-- Email: kyd-w@example.com
+    <div class="footer">
+        <p style="margin-top: 50px; color: #999; font-size: 0.8em;">
+            © 2026 IT每日简报 | Powered by GitHub Pages
+        </p>
+    </div>
+</body>
+</html>
