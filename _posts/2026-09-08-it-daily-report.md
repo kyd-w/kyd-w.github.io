@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "IT 每日简报 - 2026-09-08"
-date: 2026-09-08 20:12:34 +0800
+date: 2026-09-08 20:22:50 +0800
 categories: [简报]
 ---
 
 # IT 每日简报 - 2026-09-08
 
-> 生成时间：2026-09-08 20:12:34 +0800
+> 生成时间：2026-09-08 20:22:50 +0800
 > 数据时效：仅包含最近 7 天内的信息
 > 数据来源：多搜索服务 API（Tavily → 智谱）
 
@@ -21,18 +21,24 @@ IT之家 9 月 8 日消息，Alphabet 旗下谷歌当地时间周二宣布调整
 
 📰 IT之家 | 📅 2026-09-08 | 🔗 [查看原文](https://www.ithome.com/0/999/903.htm)
 
-### 2. 华为官宣鸿蒙 HarmonyOS 7 发布 24 小时后累计升级终端设备数突破 500 万
-
-IT之家 9 月 8 日消息，华为官方刚刚宣布，鸿蒙 HarmonyOS 7 系统发布 24 小时后，累计升级终端设备数突破 500 万。据IT之家昨日报道，在 HarmonyOS 7 | HUAWEI Mate XT 2 及全场景新品发布会上，鸿蒙 7 操作系统正式发布。新系统主打全新空间美学，搭载 Harmony Intelligence 智能架构，拥有系统智能体小艺，已正式开启公测。官方介绍...
-
-📰 IT之家 | 📅 2026-09-08 | 🔗 [查看原文](https://www.ithome.com/0/999/895.htm)
-
 
 ---
 
 ## 2. AI及机器人行业最新动态
 
-### 1. 比亚迪：网传“闪充车型订单积压 25 万辆”消息不实
+### 1. 经合组织最新报告：不用或少用 AI 完成课业的学生，整体表现优于常用 AI 的学生
+
+IT之家 9 月 8 日消息，据彭博社今天（8 日）晚间报道，经济合作与发展组织（OECD）最新教育报告显示，不使用或较少使用 AI 聊天机器人完成课业的学生，整体表现优于经常使用 AI 的学生。报告提供了迄今覆盖范围最广的一批证据，显示 AI 可能对儿童学习产生负面影响。报告指出，从不或几乎从不使用 AI 为写作作业起草文本的学生，科学测试平均得分为 509 分；每天或几乎每天使用 AI 完成这...
+
+📰 IT之家 | 📅 2026-09-08 | 🔗 [查看原文](https://www.ithome.com/0/999/909.htm)
+
+### 2. 六联智能发布全球首批 "Gorgon Halo" 笔电 AXN88B-160M-YD
+
+IT之家 9 月 8 日消息，六联智能 (SIXUNITED) 今日发布了全球首批搭载 AMD 锐龙 AI Max+ 400 "Gorgon Halo" 处理器的笔记本电脑 AXN88B-160M-YD。这款笔电性能释放可达 120W；支持 192GB LPDDR5X-8533 内存，提供 2 个 M.2 2280 (PCIe Gen4 ×4) SSD 盘位；搭载可翻转 145° 的 16" 25...
+
+📰 IT之家 | 📅 2026-09-08 | 🔗 [查看原文](https://www.ithome.com/0/999/907.htm)
+
+### 3. 比亚迪：网传“闪充车型订单积压 25 万辆”消息不实
 
 IT之家 9 月 8 日消息，据“红星资本局”今天（8 日）傍晚报道，日前有消息称，比亚迪管理层在电话会议中透露，支持闪充技术的车辆订单积压量约为 25 万辆，到 2027 年一季度将实现产能充足。对此，比亚迪方面回应称“上述消息不实”。据IT之家了解，比亚迪在 9 月 4 日公布的投资者关系活动记录表中提到，今年受电池产能制约，闪充太受欢迎。由于 AI 基础设施的建设，功率半导体、碳化硅的需求也...
 
@@ -78,7 +84,42 @@ North America will maintain its leadership in 2026 through deep enterprise adopt
 
 ## 4. GitHub 热门项目（今日 Star 增长最快 Top 5）
 
-（暂无更新内容）
+
+### 1. obra/superpowers
+
+An agentic skills framework & software development methodology that works.
+
+⭐ 283,067 | 🔗 [查看项目](https://github.com/obra/superpowers)
+
+
+### 2. affaan-m/ECC
+
+The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
+
+⭐ 253,656 | 🔗 [查看项目](https://github.com/affaan-m/ECC)
+
+
+### 3. multica-ai/andrej-karpathy-skills
+
+A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
+
+⭐ 211,088 | 🔗 [查看项目](https://github.com/multica-ai/andrej-karpathy-skills)
+
+
+### 4. microsoft/markitdown
+
+Python tool for converting files and office documents to Markdown.
+
+⭐ 181,281 | 🔗 [查看项目](https://github.com/microsoft/markitdown)
+
+
+### 5. browser-use/browser-use
+
+🌐 Make websites accessible for AI agents. Automate tasks online with ease.
+
+⭐ 113,073 | 🔗 [查看项目](https://github.com/browser-use/browser-use)
+
+
 ---
 
 ## 5. Hacker News Show（热门项目展示）
@@ -99,7 +140,7 @@ North America will maintain its leadership in 2026 through deep enterprise adopt
 
 来源文章，点击查看详情
 
-⭐ 157 points | 👤 CMDDestory | 🔗 [查看项目](https://github.com/Sadpainy/Stuxnet)
+⭐ 158 points | 👤 CMDDestory | 🔗 [查看项目](https://github.com/Sadpainy/Stuxnet)
 
 ### 4. Show HN: I made Artle – a quick, daily art guessing game
 
@@ -107,41 +148,41 @@ North America will maintain its leadership in 2026 through deep enterprise adopt
 
 ⭐ 3 points | 👤 steinvakt2 | 🔗 [查看项目](https://artle.eu)
 
-### 5. Show HN: NYC MapTap – Learn NYC neighborhoods
+### 5. Show HN: I've Translated Linear Algebra Done Right by Axler to Hebrew
+
+来源文章，点击查看详情
+
+⭐ 2 points | 👤 tzury | 🔗 [查看项目](https://twitter.com/AxlerLinear/status/2097188716091674804)
+
+### 6. Show HN: NYC MapTap – Learn NYC neighborhoods
 
 来源文章，点击查看详情
 
 ⭐ 12 points | 👤 abj908 | 🔗 [查看项目](https://albertjoseph0.github.io/nyc-maptap/)
 
-### 6. Show HN: Doc-scraper, offline searchable docs corpora for coding agents (Go)
+### 7. Show HN: Doc-scraper, offline searchable docs corpora for coding agents (Go)
 
 来源文章，点击查看详情
 
 ⭐ 5 points | 👤 devlithic | 🔗 [查看项目](https://github.com/Sriram-PR/doc-scraper)
 
-### 7. Show HN: Wg-admin – web UI for an existing WireGuard host
+### 8. Show HN: Wg-admin – web UI for an existing WireGuard host
 
 来源文章，点击查看详情
 
 ⭐ 29 points | 👤 vsergione | 🔗 [查看项目](https://github.com/logimaxx/wg-admin)
 
-### 8. Show HN: GET Together – A social network where you don't need POST to Post
+### 9. Show HN: GET Together – A social network where you don't need POST to Post
 
 来源文章，点击查看详情
 
 ⭐ 105 points | 👤 nchudleigh | 🔗 [查看项目](https://gettogether.dev)
 
-### 9. Show HN: HomeCat – Design your backyard office
+### 10. Show HN: HomeCat – Design your backyard office
 
 来源文章，点击查看详情
 
 ⭐ 37 points | 👤 dearilos | 🔗 [查看项目](https://myhomecat.com)
-
-### 10. Show HN: Engrim – A universal, local-first SQLite memory engine for AI CLIs
-
-来源文章，点击查看详情
-
-⭐ 88 points | 👤 timgordontg | 🔗 [查看项目](https://github.com/timgordontg/engrim)
 
 
 ---
