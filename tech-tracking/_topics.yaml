@@ -1,0 +1,24 @@
+# 课题注册表：Pi 周任务读取。enabled=true 的课题进周报③章节与巡检。
+# 调整方式：改本文件 → git push pi main → Pi 收件箱同步后下次周任务生效
+topics:
+  - id: agent-paradigm
+    name: Agent范式跟踪
+    dir: Agent范式跟踪/
+    enabled: true
+    watch: README.md 的"跟踪维度/可证伪信号"两节
+  - id: jev
+    name: Jev跟踪（决策模型）
+    dir: Jev跟踪/
+    enabled: true
+    watch: README.md 的"跟踪维度与现状"表"下次关注"列
+  - id: self-evolving
+    name: 自我进化智能体跟踪
+    dir: 自我进化智能体跟踪/
+    enabled: true
+    watch: README.md 的"载体层换代史"表与"下次关注"列
+archived:            # 认知归档：仅存档，不巡检不进周报
+  - {id: rea, name: REA逆向框架, file: 2026-10-12-REA-逆向框架调研.md}
+  - {id: agentrq, name: AgentRQ, file: 2026-10-12-AgentRQ-项目调研.md}
+  - {id: localai, name: LocalAI, file: 2026-10-05-LocalAI-项目调研.md}
+scans:               # 全景扫描：不巡检，作为周报背景语料
+  pattern: "AI技术热点全景扫描-*.md"
