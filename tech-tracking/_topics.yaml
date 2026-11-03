@@ -5,17 +5,17 @@ topics:
     name: Agent范式跟踪
     dir: Agent范式跟踪/
     enabled: true
-    watch: README.md 的"跟踪维度/可证伪信号"两节
+    watch: "可证伪信号逐条核对：①决策层被主流框架原生集成 ②skill/playbook出现标准或市场 ③CLI原生MCP出口/包装器自动生成 ④独立评测验证基建起飞 ⑤harness类项目衰退加速（OpenClaw已实证）；风险信号：平台一体化收编决策层/工具层"
   - id: jev
     name: Jev跟踪（决策模型）
     dir: Jev跟踪/
     enabled: true
-    watch: README.md 的"跟踪维度与现状"表"下次关注"列
+    watch: "Jev 1.14 GA；OpenRouter份额变化（护城河硬指标）；StartLux独立验证（待证实）；Decision Index独立化；国内大厂入场信号；Laya多模态跟进与0.4/1.0版本；开源RLCD管线与Jev校准差距"
   - id: self-evolving
     name: 自我进化智能体跟踪
     dir: 自我进化智能体跟踪/
     enabled: true
-    watch: README.md 的"载体层换代史"表与"下次关注"列
+    watch: "第4代载体特征（编排OS化/平台吞并）；dots开放生态与system card安全边界；学习循环标准化/技能市场信号；Raven实测可信度（通稿待验证）；Claude skills是否长出学习循环；决策模型进主流harness案例"
 archived:            # 认知归档：仅存档，不巡检不进周报
   - {id: rea, name: REA逆向框架, file: 2026-10-12-REA-逆向框架调研.md}
   - {id: agentrq, name: AgentRQ, file: 2026-10-12-AgentRQ-项目调研.md}
