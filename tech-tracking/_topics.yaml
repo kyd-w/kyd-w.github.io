@@ -17,6 +17,7 @@ topics:
     enabled: true
     watch: "第4代载体特征（编排OS化/平台吞并）；dots开放生态与system card安全边界；学习循环标准化/技能市场信号；Raven实测可信度（通稿待验证）；Claude skills是否长出学习循环；决策模型进主流harness案例"
 archived:            # 认知归档：仅存档，不巡检不进周报
+  - {id: tryboxi, name: tryboxi, file: 2026-11-05-tryboxi-项目调研.md}
   - {id: rea, name: REA逆向框架, file: 2026-10-12-REA-逆向框架调研.md}
   - {id: agentrq, name: AgentRQ, file: 2026-10-12-AgentRQ-项目调研.md}
   - {id: localai, name: LocalAI, file: 2026-10-05-LocalAI-项目调研.md}
