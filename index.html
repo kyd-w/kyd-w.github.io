@@ -1,4 +1,3 @@
----
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -117,48 +116,68 @@
 <body>
     <div class="container">
         <h1>📰 IT每日简报</h1>
-        
+
         <div class="meta">
-            <p>📅 每日汇总 IT、AI、Agent 等行业的最新动态</p>
-            <p>⏰ 更新时间：工作日早8:00</p>
+            <p>📅 技术研究跟踪：周报 + 课题 + 日报存档</p>
+            <p>⏰ 更新节奏：技术周报每周日更新 · 课题跟踪随研究仓持续同步</p>
             <p>🌐 访问地址：<a href="https://kyd-w.github.io/">https://kyd-w.github.io/</a></p>
         </div>
-        
+
         <div class="section">
             <h2>📝 简介</h2>
-            <p>本站点是 IT 每日简报的展示平台，每日更新以下内容：</p>
+            <p>本站点跟踪 IT/AI/Agent 领域动态，包含三块内容：</p>
             <ul class="intro-list">
-                <li><strong>IT行业最新动态</strong> - 全球 IT 行业的重要新闻和趋势</li>
-                <li><strong>AI及机器人行业最新动态</strong> - 人工智能和机器人领域的最新进展</li>
-                <li><strong>Agent 热门 Skill</strong> - ClawHub 等技能市场的热门智能体技能</li>
-                <li><strong>GitHub 热门项目</strong> - GitHub 上的优秀开源项目推荐</li>
-                <li><strong>个人 OPC 优秀案例</strong> - One Person Company 利用 AI 智能体实现公司化运营的案例</li>
-                <li><strong>教育+AI 行业新产品</strong> - 教育科技领域的最新产品动态</li>
+                <li><strong>技术周报</strong> - 自动化管线生成的全周资讯汇总与课题核对，每周日更新</li>
+                <li><strong>课题跟踪</strong> - 持续跟踪课题的活文档与日期快照（决策模型 / 自我进化智能体 / Agent 范式）</li>
+                <li><strong>IT日报存档</strong> - 2026-03 至 2026-11-02 的每日简报历史（已停更，完整保留）</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>🔥 最新5条日报</h2>
+            <h2>📊 技术周报</h2>
+            <p>每周日自动生成 · 全周资讯汇总与课题关注项核对</p>
             <ul class="content-list">
-                {%- for post in site.posts limit:5 %}
+                {%- assign weeklies = site.posts | where_exp: "p", "p.url contains 'weekly-report'" -%}
+                {%- for post in weeklies -%}
                 <li>
                     <a href="{{ post.url }}">
-                        <span>IT 每日简报 - {{ post.date | date: "%Y-%m-%d" }}</span>
+                        <span>技术周报 - {{ post.date | date: "%Y-%m-%d" }}</span>
                         <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
                         {%- if forloop.first %}<span class="badge new">NEW</span>{% endif -%}
                     </a>
                 </li>
-                {%- endfor %}
+                {%- endfor -%}
             </ul>
         </div>
 
         <div class="section">
-            <h2>📂 历史简报</h2>
-            <p>查看更多历史日报：</p>
-            <a href="https://github.com/kyd-w/kyd-w.github.io/tree/main/_posts" class="btn">查看 GitHub 仓库</a>
-            <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
-                💡 提示：所有日报文件存储在 GitHub 仓库的 _posts 目录中，包含从 2026年3月至今的完整历史记录。
-            </p>
+            <h2>📚 课题跟踪</h2>
+            <p>课题活文档（README）+ 日期快照 · 详见目录索引</p>
+            <ul class="content-list">
+                <li><a href="/tech-tracking/Jev跟踪/README.html"><span>Jev · 决策模型跟踪</span><span class="date">持续更新</span></a></li>
+                <li><a href="/tech-tracking/自我进化智能体跟踪/README.html"><span>自我进化智能体跟踪</span><span class="date">持续更新</span></a></li>
+                <li><a href="/tech-tracking/Agent范式跟踪/README.html"><span>Agent 范式跟踪</span><span class="date">持续更新</span></a></li>
+                <li><a href="/tech-tracking/AI技术热点全景扫描-2026-11-02.html"><span>AI 技术热点全景扫描</span><span class="date">月度</span></a></li>
+                <li><a href="/tech-tracking/README.html"><span>📁 全部目录索引</span><span class="date">目录</span></a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🗄️ IT日报 · 已停更存档</h2>
+            <p style="font-size: 0.9em; color: #666;">该栏目于 2026-11 停更，历史简报完整保留。</p>
+            <ul class="content-list">
+                {%- assign dailies = site.posts | where_exp: "p", "p.url contains 'it-daily-report'" -%}
+                {%- for post in dailies limit:5 -%}
+                <li>
+                    <a href="{{ post.url }}">
+                        <span>IT 每日简报 - {{ post.date | date: "%Y-%m-%d" }}</span>
+                        <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+                        {%- if forloop.first %}<span class="badge">存档</span>{% endif -%}
+                    </a>
+                </li>
+                {%- endfor -%}
+            </ul>
+            <a href="https://github.com/kyd-w/kyd-w.github.io/tree/main/_posts" class="btn">查看完整历史（GitHub）</a>
         </div>
 
         <div class="footer">
