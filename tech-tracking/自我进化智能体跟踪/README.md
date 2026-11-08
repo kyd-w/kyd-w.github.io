@@ -29,9 +29,9 @@
 
 | # | 维度 | 现状（2026-11-02） | 下次关注 |
 |---|---|---|---|
-| 1 | **载体层（常驻运行时）** | 换代进行中：OpenClaw 退热 → Hermes（个人侧）→ DeepSeek Harness（开发者/编排侧）→ dots（平台侧）三条路线分叉 | 第 4 代载体特征（编排 OS？平台吞并？）；dots 是否开放生态 |
-| 2 | **进化机制（学习循环/技能沉淀）** | Hermes 学习循环（15 任务复盘→技能提取）是当前最完整实现；CoEvoSkills 技能包协同进化 | 学习循环的标准化；技能市场/共享机制是否出现 |
-| 3 | **Harness 自我进化研究** | EvolveNet（2608.04968，协作进化 harness）；self-evolving-agent-patterns（1000+ 自主循环工程模式）；Raven（EverMind，"L3 数字生命"，开源） | EvolveNet 类方法进入主流框架；Raven 实测可信度（通稿口径需验证） |
+| 1 | **载体层（常驻运行时）** | 换代进行中：OpenClaw 退热 → Hermes（个人侧）→ DeepSeek Harness（开发者/编排侧）→ dots（平台侧）三条路线分叉；11-08 蒸馏（待证实）：编排 OS 化基建同批出现（Amazon Infinity 运行时 / Rivet / Temporal AI GA）——平台吞并线上游 | 第 4 代载体特征（编排 OS？平台吞并？）；dots 是否开放生态 |
+| 2 | **进化机制（学习循环/技能沉淀）** | Hermes 学习循环（15 任务复盘→技能提取）是当前最完整实现；CoEvoSkills 技能包协同进化；11-08 蒸馏（待证实）：三路径散点实证——Astra 权重级 / EvoGroup harness 级 / GenericAgent 技能级（token 降 6 倍），标准化未至、密度先行 | 学习循环的标准化；技能市场/共享机制是否出现 |
+| 3 | **Harness 自我进化研究** | EvolveNet（2608.04968，协作进化 harness）；self-evolving-agent-patterns（1000+ 自主循环工程模式）；Raven（EverMind，"L3 数字生命"，开源）；HyperVolve 数亿元天使轮（11-08 蒸馏，通稿待证实） | EvolveNet 类方法进入主流框架；Raven 实测可信度（通稿口径需验证） |
 | 4 | 平台厂商 | OpenAI dots（常驻+云电脑）；Claude Code skills/hooks 生态；Manus、Claude Cowork 等 | dots system card 的安全边界；Claude skills 是否长出学习循环 |
 | 5 | 学术线 | 2026-06 系统性 survey（Model-Centric → Environment-Driven Co-Evolution）；harness 进化成为新分支 | 顶会专题；世界模型（Genie 4）作为进化训练场的交叉 |
 | 6 | 安全与治理 | 常驻代理权限事件（Meta Muse 读私信→苹果收紧 macOS FDA）；"代理攻击面"（认证/审计/权限分级） | L3 级自主性的治理框架；常驻代理的权限最小化标准 |
@@ -52,6 +52,7 @@
 | 日期 | 快照文件 | 要点 |
 |---|---|---|
 | 2026-11-02 | [2026-11-02.md](2026-11-02.md) | 建档：两层框架（载体/机制）+ 载体换代史（OpenClaw→Hermes→DS Harness→dots）+ 现状基线 |
+| 2026-11-08 | [2026-11-08.md](2026-11-08.md) | W45 周报蒸馏（标题级待证实）：「学习循环标准化」watch 首次密集命中但均为散点（Astra 权重级/EvoGroup harness 级/GenericAgent 技能级）；编排 OS 化基建同批出现（Amazon Infinity/Rivet/Temporal）；Astra 为反共识信号（碰权重，粒度待核）；HyperVolve 大额融资；国内通稿两条待验证 |
 
 ## 更新约定
 
