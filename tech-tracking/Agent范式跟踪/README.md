@@ -1,3 +1,5 @@
+---
+---
 # Agent 范式演进 · 持续跟踪
 
 > 建档：2026-10-12 ｜ **活文档**（工作假设 + 演进时间线 + 跟踪维度 + 可证伪信号 + 日志），每次跟踪后更新
@@ -37,9 +39,9 @@ Tier 3  人工断点：危险操作审批（HITL，AgentRQ 验证的模式） �
 
 | # | 维度 | 现状（2026-10-12） | 下次关注 | 专项 |
 |---|---|---|---|---|
-| 1 | 决策层 | Jev 闭源 early access；开源对标 Laya/Von/kev 竞速 | 主流框架原生集成决策层的首个案例；Laya 大版本 | [Jev跟踪/](../Jev跟踪/README.md) |
-| 2 | 工具/方法论中间件 | REA 爆发验证"存量工具 MCP 化 + skill 方法论编码"模式；x64dbg-MCP 等同类涌现 | MCP 包装器自动生成；更多垂直域出现 REA 同构者 | [REA 调研](../2026-10-12-REA-逆向框架调研.md) |
-| 3 | HITL 控制平面 | AgentRQ（MCP+ACP 双协议，55 agent 接入）；平台原生审批功能在挤压其空间 | ACP 协议采纳度；平台是否原生收编审批/通知 | [AgentRQ 调研](../2026-10-12-AgentRQ-项目调研.md) |
+| 1 | 决策层 | Jev 闭源 early access；开源对标 Laya/Von/kev 竞速 | 主流框架原生集成决策层的首个案例；Laya 大版本 | [Jev跟踪/](../Jev跟踪/README.html) |
+| 2 | 工具/方法论中间件 | REA 爆发验证"存量工具 MCP 化 + skill 方法论编码"模式；x64dbg-MCP 等同类涌现 | MCP 包装器自动生成；更多垂直域出现 REA 同构者 | [REA 调研](../2026-10-12-REA-逆向框架调研.html) |
+| 3 | HITL 控制平面 | AgentRQ（MCP+ACP 双协议，55 agent 接入）；平台原生审批功能在挤压其空间 | ACP 协议采纳度；平台是否原生收编审批/通知 | [AgentRQ 调研](../2026-10-12-AgentRQ-项目调研.html) |
 | 4 | 平台 agent 能力 | Claude Code/Codex 持续吸收 harness 功能——商品化的持续来源 | 平台是否开始收编决策层/工具层（若是，中间件窗口收窄） | — |
 | 5 | skill/playbook 资产化 | skills.sh 分发、AgentRQ distributed skills、REA skill 各自为政 | 出现标准或市场（= 资产类别转移完成的标志） | — |
 | 6 | 验证/评测基建 | 散点（Jev 校准概率、REA 证据契约、各家 eval） | 独立验证基建项目起飞（脱离 LLM 运行的前提） | — |
@@ -78,7 +80,7 @@ Tier 3  人工断点：危险操作审批（HITL，AgentRQ 验证的模式） �
 
 | 类型 | 入口 |
 |---|---|
-| 专项 | [Jev跟踪/README.md](../Jev跟踪/README.md)（含其自有渠道表） |
+| 专项 | [Jev跟踪/README.md](../Jev跟踪/README.html)（含其自有渠道表） |
 | GitHub | awesome-decision-models ｜ morluto/rea ｜ agentrq/agentrq ｜ GitHub Trending（周扫） |
 | 社区 | Hacker News（Show HN 是中间件爆点的先导指标）｜ r/LocalLLaMA ｜ X（Austen Allred 等）｜ 国内：53AI/开源中国/腾讯云开发者 |
 | 官方 | Anthropic/OpenAI/Google 的 agent 平台更新日志（维度 4 的主信源） |
@@ -96,4 +98,4 @@ Tier 3  人工断点：危险操作审批（HITL，AgentRQ 验证的模式） �
 |---|---|
 | 2026-10-12 | 建档：从 Jev/REA/AgentRQ 三专项综合出三特征范式假设（快/瘦/可验证）+ 分层升级架构 + 5 条可证伪信号 |
 | 2026-10-12 | 脱敏外发版：移除涉及个人项目背景的内容，范式判断与评估框架不受影响 |
-| 2026-11-08 | W45 周报蒸馏（标题级待证实，详见 [Jev跟踪/2026-11-08](../Jev跟踪/2026-11-08.md)）：信号①②④⑤均获边缘证据但无链接核实，维持 ⏳；**证伪方向信号密集**——平台一体化收编决策/工具层（Snowflake 动态路由、Cisco Antares-3B、Amazon Infinity、Rivet、Temporal GA），若 1-2 个季度内坐实则触发工作假设全量复审；另新增风险面证据群：Agent 工具链安全事件（Langflow RCE、Claude Code 凭据泄露 1122 文件、Firecracker VM 逃逸、美监管首个 rogue-agent 框架）——支撑分层架构中验证回路层的必要性 |
+| 2026-11-08 | W45 周报蒸馏（标题级待证实，详见 [Jev跟踪/2026-11-08](../Jev跟踪/2026-11-08.html)）：信号①②④⑤均获边缘证据但无链接核实，维持 ⏳；**证伪方向信号密集**——平台一体化收编决策/工具层（Snowflake 动态路由、Cisco Antares-3B、Amazon Infinity、Rivet、Temporal GA），若 1-2 个季度内坐实则触发工作假设全量复审；另新增风险面证据群：Agent 工具链安全事件（Langflow RCE、Claude Code 凭据泄露 1122 文件、Firecracker VM 逃逸、美监管首个 rogue-agent 框架）——支撑分层架构中验证回路层的必要性 |

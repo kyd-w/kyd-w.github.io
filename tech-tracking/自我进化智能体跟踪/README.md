@@ -1,3 +1,5 @@
+---
+---
 # 自我进化智能体 · 持续跟踪
 
 > 建档：2026-11-02 ｜ 本文件是**活文档**（跟踪维度现状 + 渠道 + 日志），每次跟踪后更新；详细数据见同目录的日期快照。
@@ -51,8 +53,8 @@
 
 | 日期 | 快照文件 | 要点 |
 |---|---|---|
-| 2026-11-02 | [2026-11-02.md](2026-11-02.md) | 建档：两层框架（载体/机制）+ 载体换代史（OpenClaw→Hermes→DS Harness→dots）+ 现状基线 |
-| 2026-11-08 | [2026-11-08.md](2026-11-08.md) | W45 周报蒸馏（标题级待证实）：「学习循环标准化」watch 首次密集命中但均为散点（Astra 权重级/EvoGroup harness 级/GenericAgent 技能级）；编排 OS 化基建同批出现（Amazon Infinity/Rivet/Temporal）；Astra 为反共识信号（碰权重，粒度待核）；HyperVolve 大额融资；国内通稿两条待验证 |
+| 2026-11-02 | [2026-11-02.md](2026-11-02.html) | 建档：两层框架（载体/机制）+ 载体换代史（OpenClaw→Hermes→DS Harness→dots）+ 现状基线 |
+| 2026-11-08 | [2026-11-08.md](2026-11-08.html) | W45 周报蒸馏（标题级待证实）：「学习循环标准化」watch 首次密集命中但均为散点（Astra 权重级/EvoGroup harness 级/GenericAgent 技能级）；编排 OS 化基建同批出现（Amazon Infinity/Rivet/Temporal）；Astra 为反共识信号（碰权重，粒度待核）；HyperVolve 大额融资；国内通稿两条待验证 |
 
 ## 更新约定
 
