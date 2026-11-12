@@ -16,6 +16,11 @@ topics:
     dir: 自我进化智能体跟踪/
     enabled: true
     watch: "第4代载体特征（编排OS化/平台吞并）；dots开放生态与system card安全边界；学习循环标准化/技能市场信号；Raven实测可信度（通稿待验证）；Claude skills是否长出学习循环；决策模型进主流harness案例"
+  - id: security-risk
+    name: 安全风险跟踪（AI冲击）
+    dir: 安全风险跟踪/
+    enabled: true
+    watch: "可证伪信号逐条核对：①AI挖洞/深度伪造进入主流攻防实案 ②agent/MCP/skills生态权限提升或投毒实案 ③selfupdate/签名机制集中爆雷（Go事件为首个样本）④slop投毒进官方通报 ⑤Go三库修复版下游落地率；风险信号：应急响应时长恶化/防御侧AI化滞后"
 archived:            # 认知归档：仅存档，不巡检不进周报
   - {id: tryboxi, name: tryboxi, file: 2026-11-05-tryboxi-项目调研.md}
   - {id: rea, name: REA逆向框架, file: 2026-10-12-REA-逆向框架调研.md}
