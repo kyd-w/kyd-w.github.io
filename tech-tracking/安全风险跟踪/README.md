@@ -16,14 +16,14 @@
 
 ## 跟踪维度与现状
 
-| # | 维度 | 现状（2026-11-12） | 下次关注 |
+| # | 维度 | 现状（2026-11-14） | 下次关注 |
 |---|---|---|---|
-| 1 | **供应链安全（立项样本所在）** | Go 生态 10-25/26 一日 14 公告：rclone selfupdate 签名校验绕过（CVE-2026-116189，供应链级）、klauspost/compress zstd 整数溢出 panic（CVE-2026-116591，CVSS~8.7）、go-jose 超大密钥 DoS/嵌套 JSON 栈溢出；均系"没人直接用但人人间接依赖"的底层库 | 修复版本落地率（v1.75.2 / v1.20.2 / v4.1.6+ 是否被下游及时吸收）；同类 selfupdate 签名机制是否被集中审计 |
-| 2 | AI 增强攻击 | 趋势公认（AI 挖洞/伪造/钓鱼成本骤降），主流平台实证案例待搜集入档 | 大厂 SRC / 赏金平台对 AI 生成漏洞的处理口径；深度伪造落地重大案件 |
-| 3 | AI 自身攻击面（agent/MCP/skills） | 散点已知：Meta Muse 读私信→苹果收紧 macOS FDA（载自自我进化课题 11-02 快照）；dots 出 system card；NVIDIA NemoClaw 主打安全增强 | MCP/skills 生态首个权限提升实案；agent 权限最小化标准是否出现 |
-| 4 | 包生态投毒（slop poisoning 等） | AI 生成包名抢注/幻觉投毒（slop-squatting）已在 Python 生态出现（背景知识，具体 2026 实证待入档） | PyPI/npm/Go 官方通报是否出现 AI 投毒专项；包管理器的签名/信誉机制升级 |
-| 5 | 沙箱与隔离 | microVM 路线活跃：tryboxi（Go 本地 microVM agent 沙箱，已认知归档）、gVisor 等——防御侧为 agent 运行时建隔离层 | microVM 是否成为 agent 运行时标配；云端沙箱与本地 microVM 的市场分界 |
-| 6 | 防御侧 AI 化与治理 | CISA KEV 等既有机制照常运转；AI 辅助审计/运营工具化程度待考察 | 应急响应时长是否恶化（防御跟不上攻击的量化信号）；治理框架（agent 权限、AI 安全立法）落地 |
+| 1 | **供应链安全（立项样本所在）** | 落地率复查（11-14）：修复先行、公告滞后 16 天（rclone v1.75.2=10-09，公告批 10-25/26）；go-jose 双 CVE 定号（116586→v4.1.5 / 116587→v4.1.6）；发行版层已跟进（Amazon ALAS / Debian / Red Hat）。**新交汇点样本：LiteLLM 网关发布管线被投毒（10-21，TeamPCP，二次中招，PyPI+Docker 双通道）** | 下游应用层吸收率；TeamPCP 连续打击安全工具链（Trivy/KICS/LiteLLM）的下一步目标 |
+| 2 | AI 增强攻击 | **空档已补齐（11-14 快照）**：OpenAI 官方挖洞成本表（11-06：948 个 Linux LPE / $1.21M / 净盈利 16-55x / 10 项新型利用技术）；curl 赏金关停（01-26：AI slop 淹没人工分诊——防御经济学崩坏标志事件）；Cloudflare Glasswing/Mythos（05-18：利用链拼接 + PoC 自证闭环，行业出现 2 小时补丁 SLA） | Linux 上游对 948 LPE 的消化进度；下一个因 AI 改制/关停的赏金平台；"AI slop 淹没分诊"的量化研究 |
+| 3 | AI 自身攻击面（agent/MCP/skills） | 从散点升级为实案+统计（证据多为厂商级，待验证）：PromptPwnd 事件（2025-12）、6 起真实 MCP 权限滥用（浏览器内嵌 MCP 越权至宿主）、CVE-2026-27826（MCP 请求重定向）、MCP STDIO 命令注入家族（04 月）、"82% 文件操作类 MCP 有可利用缺陷"统计 | OWASP Agentic AI Top 10 演进；agent 权限最小化标准是否出现（仍未） |
+| 4 | 包生态投毒（slop poisoning 等） | **空档已补齐（11-14 快照）**：slopsquatting 成建制化研究对象——CSA 研究笔记（04-19）、Endor Labs 分析（07 月，coding agent 幻觉→恶意包闭环）、学术实证（Park et al. 幻觉包名注册研究、Al-Zofi et al. 系统综述） | PyPI/npm/Go 官方 AI 投毒专项通报（仍未）；注册表签名/信誉机制升级 |
+| 5 | 沙箱与隔离 | OpenAI 报告顺带实证：cyber 模型第一刀砍在测试/隔离基建上（QEMU TCG 0-day；Kata/Moby/gVisor 被主动测试修复）——沙箱实现自身成 offensive 首要目标 | microVM 是否成为 agent 运行时标配；沙箱被作为攻击面的实证案例 |
+| 6 | 防御侧 AI 化与治理 | INTERPOL 深伪公众宣传（10 月）；OpenAI Patch the Planet/Daybreak（补丁随报告建制化产出）；CSA 呼吁 CVD 改革（2026 CVE 预测上调 ~59,427）；应急时长量化仍缺 | 应急响应时长是否恶化（量化信号仍未出现）；agent 权限、AI 安全立法落地 |
 
 ## 跟踪渠道
 
@@ -40,6 +40,7 @@
 | 日期 | 快照文件 | 要点 |
 |---|---|---|
 | 2026-11-12 | [2026-11-12.md](2026-11-12.html) | 建档：Go 生态一日 14 公告事件详情（rclone selfupdate 签名绕过 / klauspost zstd 溢出 / go-jose 三连），确立"冲击层 × 新增面 × 供应链交汇"两层框架 |
+| 2026-11-14 | [2026-11-14.md](2026-11-14.html) | 三 🚨：OpenAI 挖洞工业化成本表（948 LPE / 净盈利 16-55x）、curl 赏金因 AI slop 关停、LiteLLM 网关供应链被投毒；维度 2/4 空档补齐；新格局判断"AI slop 是独立威胁类别" |
 
 ## 更新约定
 
