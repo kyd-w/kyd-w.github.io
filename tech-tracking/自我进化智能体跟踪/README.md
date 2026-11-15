@@ -23,7 +23,7 @@
 | 2.5 | NanoClaw / NemoClaw 等 | 社区/NVIDIA | 2026 中 | 细分存续 | 极简（树莓派）/ 安全增强（NVIDIA 官方教程）等垂直方向 |
 | 3 | **DeepSeek Harness** | DeepSeek | 2026-10 v1.2 | 活跃 | **智能体编排/操作系统化**：Codex 与 Claude Code 作为子智能体插件、Git 工作树、思考翻译、Cordis 插件化四层解构 |
 | 3.1 | dsh-superagent-prototype | DeepSeek | 2026-10-31 开源（MIT） | 活跃（研究原型） | 3 代载体官方常驻化：事件驱动常驻 coding agent（监听 GitHub/飞书→自动出 PR、可并行、"会主动干活更懂何时闭嘴"分寸规则）——编排 OS 厂商亲自下场常驻智能体 |
-| 3.5 | **TechRadar（本课题实验管线）** | 自建（38服务器） | 2026-11-02 上线 | 活跃 | 载体替代实证：OpenClaw→dsh 架构的 API 模式先行（dsh 集成待二期）；日采集+Laya 影子初筛+DeepSeek 周报，全链路 systemd 化 |
+| 3.5 | **TechRadar（本课题实验管线）** | 自建（38服务器） | 2026-11-02 上线 | 活跃 | 载体替代实证：OpenClaw→dsh 架构的 API 模式先行（dsh 集成待二期）；日采集+Laya 影子初筛+DeepSeek 周报，全链路 systemd 化；**11-15 自主化路径立项**（[演进注记](2026-11-15.html)）：巡检/蒸馏/push 三环节从人工断点降级为 agent 闭环，判断资产显式化优先、载体后选 |
 | ? | dots | OpenAI | DevDay 2026-09-29 发布 | 平台级变量 | 独立云电脑 + 4000+ 应用连接 + Astra 驱动；闭源平台派常驻智能体，已出 system card |
 
 > 📌 2026-11-02 实录：OpenClaw（1 代）在 38服务器正式退役（系统级+用户级双单元均下线）——生命周期 2026 初爆红 → 11 月自建替代，全程约 10 个月，再次验证"载体换代快、盯机制不盯单品"。
