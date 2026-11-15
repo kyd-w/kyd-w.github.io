@@ -30,10 +30,10 @@
 
 ## 跟踪维度与现状
 
-| # | 维度 | 现状（2026-11-14） | 下次关注 |
+| # | 维度 | 现状（2026-11-15） | 下次关注 |
 |---|---|---|---|
 | 1 | **载体层（常驻运行时）** | 无第 4 代信号，三路线在"常驻+自我改进"处合流：3 代 DSH 官方下场常驻化（dsh-superagent，10-31 MIT）；2 代 Hermes 托管商业化（Hermes Cloud）；平台派吸收学习循环（Managed Agents Dreaming）；插件生态大到长出 curation 基建（awesome-dsh-plugin 每日自动抓取+人工复核，11-12） | 第 4 代载体特征判定（编排 OS 常驻化 vs 平台吞并）；dsh-superagent 是否转正；dots 开放生态 |
-| 2 | **进化机制（学习循环/技能沉淀）** | 🚨 第三深度（harness 自我改写）标准化收敛（[11-14 快照](2026-11-14.html)）：学术定名 Self-Harness（2606.09498，被引 111+）→ Lilian Weng 工程化长文（07-04）→ DSH 创造模式产品化（待验证）→ Claude Managed Agents Dreaming/Outcomes 平台原生；Hermes 学习循环仍是最完整开源实现 | "Self-Harness"为标准检索词；框架采纳（LangChain 内置？）；技能市场/共享机制 |
+| 2 | **进化机制（学习循环/技能沉淀）** | 🚨 第三深度（harness 自我改写）标准化收敛（[11-14 快照](2026-11-14.html)）：学术定名 Self-Harness（2606.09498，被引 111+）→ Lilian Weng 工程化长文（07-04）→ DSH 创造模式产品化（待验证）→ Claude Managed Agents Dreaming/Outcomes 平台原生；Hermes 学习循环仍是最完整开源实现；11-15 蒸馏：标准化散点 +2（智元 LIFE 含 Plastic Memory、SkillAnchor 跨模型技能互通——"跨项目技能格式"先导候选）；**首个可量化对照基准：Self-Reorganising 团队 GPU kernel 1.21x 超 FlashInfer**（此后通稿类主张以此为尺） | "Self-Harness"为标准检索词；框架采纳（LangChain 内置？）；技能市场/共享机制；SkillAnchor 互通口径核实 |
 | 3 | **Harness 自我进化研究** | 锚点文献确立：Self-Harness（2606.09498）三段循环（失败挖掘→harness 提案→回归测试）；EvolveNet（2608.04968）；self-evolving-agent-patterns（1000+ 模式）；Raven（通稿待验证）；HyperVolve 融资（待证实） | Self-Harness 复现与主流框架采纳；Raven 实测可信度 |
 | 4 | 平台厂商 | OpenAI dots（常驻+云电脑）；**Claude Managed Agents 已长出学习循环（Dreaming 持续学习 + Outcomes 自验证，官方文档）——watch 命中，但在平台层非 skills 层**；Manus、Claude Cowork 等 | Dreaming 出研究预览后的采用数据；skills 层是否跟进学习循环；dots system card 安全边界 |
 | 5 | 学术线 | 2026-06 系统性 survey（Model-Centric → Environment-Driven Co-Evolution）；harness 进化成为新分支 | 顶会专题；世界模型（Genie 4）作为进化训练场的交叉 |
@@ -57,6 +57,7 @@
 | 2026-11-02 | [2026-11-02.md](2026-11-02.html) | 建档：两层框架（载体/机制）+ 载体换代史（OpenClaw→Hermes→DS Harness→dots）+ 现状基线 |
 | 2026-11-08 | [2026-11-08.md](2026-11-08.html) | W45 周报蒸馏（标题级待证实）：「学习循环标准化」watch 首次密集命中但均为散点（Astra 权重级/EvoGroup harness 级/GenericAgent 技能级）；编排 OS 化基建同批出现（Amazon Infinity/Rivet/Temporal）；Astra 为反共识信号（碰权重，粒度待核）；HyperVolve 大额融资；国内通稿两条待验证 |
 | 2026-11-14 | [2026-11-14.md](2026-11-14.html) | 🚨 第三深度（harness 自我改写）标准化收敛：Self-Harness 定名→Lilian Weng 工程化→DSH 创造模式（待验证）→Managed Agents Dreaming/Outcomes 平台原生；载体层 dsh-superagent（3 代官方常驻化，10-31 MIT）+ Hermes Cloud（2 代托管商业化）；无第 4 代信号，三路线在"常驻+自我改进"合流 |
+| 2026-11-15 | [2026-11-15.md](2026-11-15.html) | W46 蒸馏（无 🚨）：学习循环标准化散点 +2（智元 LIFE、SkillAnchor 跨模型技能互通）；首个可量化对照基准 Self-Reorganising 1.21x 超 FlashInfer（通稿类主张以此为尺）；平台吞并线三案例强化（百度 Famou 3.0/Salesforce R&D Agents/IBM+微软）——第 4 代判定证据继续偏向"平台吞并"但无产品级实锤；GenericAgent/EvoGroup 实测第三次顺延 |
 
 ## 更新约定
 

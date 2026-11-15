@@ -51,10 +51,10 @@ Tier 3  人工断点：危险操作审批（HITL，AgentRQ 验证的模式） �
 
 | # | 信号（若范式判断正确，应观察到） | 状态 |
 |---|---|---|
-| 1 | 决策层模型被主流 agent 框架原生集成 | ⏳（11-08 边缘证据待核：Pydantic AI 等原生集成 MCP/OpenTelemetry、Google System One 进 A2UI 管线） |
-| 2 | skill/playbook 出现标准或市场 | ⏳（11-08 强化待核：cloudflare/security-audit-skill 周增 9,155 星） |
-| 3 | CLI 工具原生带 `--agent`/MCP 出口；MCP 包装器自动生成 | ⏳ |
-| 4 | 评测/验证基础设施开始热 | ⏳（11-08 苗头待核：MaxxBench 质疑 DeepSWE 分数真实性） |
+| 1 | 决策层模型被主流 agent 框架原生集成 | ⏳（11-08 边缘证据待核：Pydantic AI 等原生集成 MCP/OpenTelemetry、Google System One 进 A2UI 管线；11-15 候选证据强化：Google Gemini Decisions API 官方上线并宣称 LangChain 集成——[官方源已核](../Jev跟踪/2026-11-15.html)，集成深度待核） |
+| 2 | skill/playbook 出现标准或市场 | ⏳（11-08 强化待核：cloudflare/security-audit-skill 周增 9,155 星；11-15 高置信强化：google/skills 官方集合 +1,933★/wk 与 addyosmani/agent-skills +3,502★/wk 同周高速起量——平台方+社区双线，star 口径待核） |
+| 3 | CLI 工具原生带 `--agent`/MCP 出口；MCP 包装器自动生成 | ⏳（11-15 待核：vercel-labs/agent-desktop 周增 6,414★——computer use CLI 原生出口候选） |
+| 4 | 评测/验证基础设施开始热 | ⏳（11-08 苗头待核：MaxxBench 质疑 DeepSWE 分数真实性；11-15 强化待核：AWS 开源 UAEF 跨框架评测框架（含防 prompt injection）；评测可信度议题群成形——基准饱和研究+MaxxBench 同批） |
 | 5 | harness 类项目（openclaw 同类）衰退加速 | ⏳（11-08 旁证待核：Amazon Infinity/Rivet/Temporal AI GA 挤压独立 harness 空间） |
 
 **证伪条件**：若 2–3 个季度内多数信号未出现、且平台 agent 一体化吞掉决策与工具层，则"分层中间件"假设不成立，范式走向平台一体化——届时本文档改写为平台范式跟踪。
@@ -99,3 +99,4 @@ Tier 3  人工断点：危险操作审批（HITL，AgentRQ 验证的模式） �
 | 2026-10-12 | 建档：从 Jev/REA/AgentRQ 三专项综合出三特征范式假设（快/瘦/可验证）+ 分层升级架构 + 5 条可证伪信号 |
 | 2026-10-12 | 脱敏外发版：移除涉及个人项目背景的内容，范式判断与评估框架不受影响 |
 | 2026-11-08 | W45 周报蒸馏（标题级待证实，详见 [Jev跟踪/2026-11-08](../Jev跟踪/2026-11-08.html)）：信号①②④⑤均获边缘证据但无链接核实，维持 ⏳；**证伪方向信号密集**——平台一体化收编决策/工具层（Snowflake 动态路由、Cisco Antares-3B、Amazon Infinity、Rivet、Temporal GA），若 1-2 个季度内坐实则触发工作假设全量复审；另新增风险面证据群：Agent 工具链安全事件（Langflow RCE、Claude Code 凭据泄露 1122 文件、Firecracker VM 逃逸、美监管首个 rogue-agent 框架）——支撑分层架构中验证回路层的必要性 |
+| 2026-11-15 | W46 周报蒸馏：信号①获官方核实级候选证据（Google Gemini Decisions API 上线+LangChain 集成，[Jev 快照](../Jev跟踪/2026-11-15.html)）；信号②④高置信强化（google/skills 与 agent-skills 双线起量、AWS UAEF 开源）。**证伪方向第二批次**：平台收编决策层实质化——Google 亲自下场决策 API（此前 OpenAI/Microsoft），叠加 IBM+微软行业平台、LangChain $300M、百度 DuMate——按更新约定 #3 记录为对工作假设的第二次挑战验证，若下批次再坐实（平台吞掉决策与工具层的集成案例）则启动全量复审。「平台一体化收编」自本日起从风险观察升级为主动跟踪项 |

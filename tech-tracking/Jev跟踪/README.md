@@ -13,7 +13,7 @@
 
 ## 跟踪维度与现状
 
-| # | 维度 | 现状（2026-11-14） | 下次关注 |
+| # | 维度 | 现状（2026-11-15） | 下次关注 |
 |---|---|---|---|
 | 1 | Jev 本体 | 1.14 状态澄清（11-14 官方博文核读）：1.14.0 于 10-14 以 jev-preview 发布、约一周后并入 jev-latest——无独立 GA 事件；`box` 类型=首个非 smart-if 类型（"决策之外"形态预告）；弃用政策出台（60/30 天警告）。**OpenRouter 份额硬指标首次入档：周请求 987M ≈ Top10 总量 97%、为第 2 名 146 倍**（10-08 数据口径）；Vercel"最快被采用"（11 月，待证实） | OpenRouter 份额周环比（腰部 d1/Kev 4B 高增速能否持续）；box/1.15 生产化；私有化部署 |
 | 2 | **训练方法** | RLCD 论文已落地：arXiv 2609.29429（Just Ask Jev）+ OpenJev-RLCD 开源实现（2609.38850）+ RLCD²（AutoThink 2610.17309，决策前简短推理） | 开源 RLCD 管线与 Jev 的校准差距实测；RLCD² 是否成"难例慢通道"标准解法 |
@@ -21,7 +21,7 @@
 | 4 | 其他开源对标 | 品类爆发：Cloudflare Clef/flash/omni（Apache-2.0 + 完全 Jev 兼容）、AWS Strands Decider 2B（含数据全开）、pplx-decider 27B、Liquid d1/d1-omni、kev 家族化（0.5B–9B）、StartLux-Decision（中国，HF 开源榜一，待证实）、Jiwo（sub-1B 第一）、Ollaya 本地运行时；11-08 蒸馏（待证实）：Baseten joey-1（2B/$0.01/M）、Liquid d1-2B、Sarvam Prism（开放权重）同批入场，价格战进入 2B 段位 | 头部收敛；Qwen3.5 基座 lineage 合规问题；StartLux 独立验证 |
 | 5 | 应用范式 | 基础设施化完成：vLLM/llama.cpp systemone 端点、Snowflake SQL 函数、Cloudflare Workers、Airflow/Camunda/Kestra 集成；TypeSafe schema 成为事实标准（类比 Chat Completions API）；11-08 蒸馏（待证实）：Snowflake 按复杂度动态路由、Google System One 进 A2UI 生成管线 | LangChain 等框架是否把决策层做成一等公民；国内工作流/低代码平台集成 |
 | 6 | 学术与批评 | label-flip 实证（交换 yes/no 标签语义→准确率崩塌，Laya 已列为已知限制）；首个对抗基准（typed 输出被操纵时无可见异常）；共性弱点：数字/日期/序数；各家"第一"均为自选子集，独立评测缺位 | HF Decision Index 私有题机制（60%+40%）能否压制刷榜；独立对抗评测 |
-| 7 | 产业信号 | OpenAI Decisions API 公测（10-06，$0.10/M，GPT-6 Luna 套壳）、Microsoft Decision-1（Foundry+OpenRouter）、Snowflake Decision 私有预览；国内大厂观望（"暂缓系理性选择"），开源侧 StartLux/InternLM 活跃；价值向平台/评测工具/编排层转移；11-08 蒸馏（待证实）：「Jev 低成本调用 Opus 达同等准确率、4 倍成本优势」获外部验证——**11-14 复查未检索到独立复现，继续挂起**；OpenRouter 已为品类设独立榜单 + CC BY 4.0 数据集（品类制度化完成） | 国内大厂 2027 Q1 前是否入场；Decision Index 独立化；「Opus 同准确率」独立复现 |
+| 7 | 产业信号 | **Google 入场（11-15 官方核实）：Gemini Decisions API——$0.1/1M 输入 + $0 输出计费、150-250ms、单次 1000 typed 问题、音视频/PDF 多模态，已上 OpenRouter+LangChain**；此前已有 OpenAI Decisions API 公测（10-06，$0.10/M，GPT-6 Luna 套壳）、Microsoft Decision-1（Foundry+OpenRouter）、Snowflake Decision 私有预览——三巨头齐下场，价格战打到计费结构；Perplexity Decider v1.3 公开训练/评测（待证实）；KDnuggets Jev 替代盘点（待证实）；国内大厂观望（"暂缓系理性选择"），开源侧 StartLux/InternLM 活跃；价值向平台/评测工具/编排层转移；11-08 蒸馏（待证实）：「Jev 低成本调用 Opus 达同等准确率、4 倍成本优势」获外部验证——**11-14 复查未检索到独立复现，继续挂起**；OpenRouter 已为品类设独立榜单 + CC BY 4.0 数据集（品类制度化完成） | **OpenRouter 榜单 google/gemini-decision-1 首周份额（最高优先）**；Jev 定价/计费结构响应；国内大厂 2027 Q1 前是否入场；Decision Index 独立化；「Opus 同准确率」独立复现 |
 
 ## 跟踪渠道
 
@@ -45,6 +45,7 @@
 | 2026-11-04 | [2026-11-04.md](2026-11-04.html) | 自有实证：Laya 影子管线 3 天 142 条 + 中英对照实验——零样本双偏置（中文保守漂移/英文字面偏置），边界问题非知识问题，LoRA 百条级校准可解；官方三 checkpoint 分任务发布=分场景有效实证；决策服务候选托管 37服务器 |
 | 2026-11-08 | [2026-11-08.md](2026-11-08.html) | W45 周报蒸馏（标题级待证实）：价格战入 2B 段位（joey-1 $0.01/M、d1-2B、Prism）；「低成本校准达 Opus 同等准确率」外部验证；平台收编具体化（Snowflake 路由/Cisco Antares-3B/Google A2UI）；Laya 影子样本 301 条备 11-16 评估 |
 | 2026-11-14 | [2026-11-14.md](2026-11-14.html) | 稳态周（无 🚨）：OpenRouter 份额硬指标入档（Jev 987M 周请求 ≈ Top10 的 97%、146 倍于第 2 名）；1.14"GA"实为 latest 通道切换（box 类型=形态扩展预告）；Laya 弱零样本获外部交叉验证；「Opus 同准确率」独立复现继续挂起 |
+| 2026-11-15 | [2026-11-15.md](2026-11-15.html) | W46 蒸馏，🚨 Google 入场：Gemini Decisions API（$0.1/1M 输入+$0 输出、多模态、已上 OpenRouter，官方源核实）——极限定价成大厂标配，下期份额榜见需求侧答案；Perplexity v1.3/Kakao/Sarvam/KDnuggets 盘点（待证实）；周报"国内大厂入场"口径有误已修正（国际大厂≠国内） |
 
 ## 更新约定
 

@@ -16,14 +16,14 @@
 
 ## 跟踪维度与现状
 
-| # | 维度 | 现状（2026-11-14） | 下次关注 |
+| # | 维度 | 现状（2026-11-15） | 下次关注 |
 |---|---|---|---|
 | 1 | **供应链安全（立项样本所在）** | 落地率复查（11-14）：修复先行、公告滞后 16 天（rclone v1.75.2=10-09，公告批 10-25/26）；go-jose 双 CVE 定号（116586→v4.1.5 / 116587→v4.1.6）；发行版层已跟进（Amazon ALAS / Debian / Red Hat）。**新交汇点样本：LiteLLM 网关发布管线被投毒（10-21，TeamPCP，二次中招，PyPI+Docker 双通道）** | 下游应用层吸收率；TeamPCP 连续打击安全工具链（Trivy/KICS/LiteLLM）的下一步目标 |
 | 2 | AI 增强攻击 | **空档已补齐（11-14 快照）**：OpenAI 官方挖洞成本表（11-06：948 个 Linux LPE / $1.21M / 净盈利 16-55x / 10 项新型利用技术）；curl 赏金关停（01-26：AI slop 淹没人工分诊——防御经济学崩坏标志事件）；Cloudflare Glasswing/Mythos（05-18：利用链拼接 + PoC 自证闭环，行业出现 2 小时补丁 SLA） | Linux 上游对 948 LPE 的消化进度；下一个因 AI 改制/关停的赏金平台；"AI slop 淹没分诊"的量化研究 |
-| 3 | AI 自身攻击面（agent/MCP/skills） | 从散点升级为实案+统计（证据多为厂商级，待验证）：PromptPwnd 事件（2025-12）、6 起真实 MCP 权限滥用（浏览器内嵌 MCP 越权至宿主）、CVE-2026-27826（MCP 请求重定向）、MCP STDIO 命令注入家族（04 月）、"82% 文件操作类 MCP 有可利用缺陷"统计 | OWASP Agentic AI Top 10 演进；agent 权限最小化标准是否出现（仍未） |
+| 3 | AI 自身攻击面（agent/MCP/skills） | **首个大规模权限配置实案（11-15 已核实，多批次）：Claude Code「Don't Ask Again」把含凭据命令写入 settings.local.json 随公开仓泄露——1122 文件/2539 凭据/1994 仓库（Apiiro 研究）**；此前已有散点实案+统计（多为厂商级，待验证）：PromptPwnd 事件（2025-12）、6 起真实 MCP 权限滥用、CVE-2026-27826（MCP 请求重定向）、MCP STDIO 命令注入家族（04 月）、"82% 文件操作类 MCP 有可利用缺陷"统计 | Anthropic/官方对泄露的响应（settings.local.json 机制是否修改）；OWASP Agentic AI Top 10 演进；agent 权限最小化标准是否出现（仍未） |
 | 4 | 包生态投毒（slop poisoning 等） | **空档已补齐（11-14 快照）**：slopsquatting 成建制化研究对象——CSA 研究笔记（04-19）、Endor Labs 分析（07 月，coding agent 幻觉→恶意包闭环）、学术实证（Park et al. 幻觉包名注册研究、Al-Zofi et al. 系统综述） | PyPI/npm/Go 官方 AI 投毒专项通报（仍未）；注册表签名/信誉机制升级 |
 | 5 | 沙箱与隔离 | OpenAI 报告顺带实证：cyber 模型第一刀砍在测试/隔离基建上（QEMU TCG 0-day；Kata/Moby/gVisor 被主动测试修复）——沙箱实现自身成 offensive 首要目标 | microVM 是否成为 agent 运行时标配；沙箱被作为攻击面的实证案例 |
-| 6 | 防御侧 AI 化与治理 | INTERPOL 深伪公众宣传（10 月）；OpenAI Patch the Planet/Daybreak（补丁随报告建制化产出）；CSA 呼吁 CVD 改革（2026 CVE 预测上调 ~59,427）；应急时长量化仍缺 | 应急响应时长是否恶化（量化信号仍未出现）；agent 权限、AI 安全立法落地 |
+| 6 | 防御侧 AI 化与治理 | INTERPOL 深伪公众宣传（10 月）；OpenAI Patch the Planet/Daybreak（补丁随报告建制化产出）；CSA 呼吁 CVD 改革（2026 CVE 预测上调 ~59,427）；应急时长量化仍缺；**新 watch（11-15）：agent 治理/监督层市场化三连——Cloudflare 按 agent 粒度访问策略（基建）/WhiteMatter $20M 融资（创业）/美联航禁 agent 代订票（政策）** | **治理市场化后续**（Cloudflare 采用数据、同类监管创业跟进）；应急响应时长是否恶化（量化信号仍未出现）；agent 权限、AI 安全立法落地 |
 
 ## 跟踪渠道
 
@@ -41,6 +41,7 @@
 |---|---|---|
 | 2026-11-12 | [2026-11-12.md](2026-11-12.html) | 建档：Go 生态一日 14 公告事件详情（rclone selfupdate 签名绕过 / klauspost zstd 溢出 / go-jose 三连），确立"冲击层 × 新增面 × 供应链交汇"两层框架 |
 | 2026-11-14 | [2026-11-14.md](2026-11-14.html) | 三 🚨：OpenAI 挖洞工业化成本表（948 LPE / 净盈利 16-55x）、curl 赏金因 AI slop 关停、LiteLLM 网关供应链被投毒；维度 2/4 空档补齐；新格局判断"AI slop 是独立威胁类别" |
+| 2026-11-15 | [2026-11-15.md](2026-11-15.html) | W46 蒸馏：🚨 Claude Code「Don't Ask Again」凭据泄露入档（1122 文件/2539 凭据，Apiiro 已核实，多批次）——维度 3 首个大规模权限配置实案；agent 集群攻击台湾政府四天（待核）；新 watch「agent 治理/监督层市场化」（Cloudflare/WhiteMatter/美联航三连）；PyPI 项目页安全信号改版（维度 4 注册表侧首个相关动作） |
 
 ## 更新约定
 
