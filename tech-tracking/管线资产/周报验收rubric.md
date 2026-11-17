@@ -15,12 +15,14 @@
 | 验收时机 | 周日早晨或周一（Pages 构建 + inbox 同步完成后） |
 | 管线流程 | `weekly_synth.py` → DeepSeek 分批 map-reduce（CHUNK=30）→ `report.py` 渲染 → `publish.py` 写 `_posts/{周一日期}-weekly-report.md` → commit `技术周报 YYYY-Www` → push |
 | 关键路径（38服务器） | `~/techradar/logs/weekly-synth/{日期}.jsonl`（StepLog）、`~/techradar/weekly/findings.json`、站点克隆 `/airuntime/workspace/kyd-w.github.io` |
+| 云侧断言源（不进内网） | `https://kyd-w.github.io/techradar-status/status.json`——点位 3 产物（`status_export.py`，挂周报后/采集后/23:50 三点 ≈3 次/日），C1/C3/C5 的字段化信号 |
 
 ## 检查清单（按序，前一项失败后项无意义）
 
 ### C1 · 定时器触发了吗
 
-- **查**：38服务器 `~/techradar/logs/weekly-synth/{周日日期}.jsonl` 存在，且含 `synth.input` 步（`new_items=N`）
+- **查（云侧）**：`status.json` 的 `tasks.weekly-synth` 周日应为真实尾事件（如 `synth.done`/`publish`），非 `{status: "missing"}`；周一查时看昨日回看（exporter 已含今日→昨日逻辑）
+- **查（内网，深度核查）**：38服务器 `~/techradar/logs/weekly-synth/{周日日期}.jsonl` 存在，且含 `synth.input` 步（`new_items=N`）
 - **通过**：文件存在、步骤完整（synth.input → synth.analyze → synth.done/publish）
 - **辅助**：`systemctl --user list-timers techradar-weekly.timer` 看下次触发；timer 带 `Persistent=true`，停机跨周日应自动补跑
 - **失败处置**：`systemctl --user start techradar-weekly.service` 手动补跑
@@ -37,8 +39,9 @@
 ### C3 · push 实锤了吗（不信返回值）
 
 - **⚠️ 已知缺口**：`publish.py` 在 push 全部失败时**仍返回 `live:{week}`**（待修，rubric 即其补偿机制）——验收禁止以返回值/日志 mode 字段为准
-- **查**：站点克隆内 `git -C /airuntime/workspace/kyd-w.github.io log --oneline --since='26 hours ago' -- _posts` 出现 `技术周报 YYYY-Www` commit（`run_health.sh` 每晚 23:50 已自动做此检查并落 `health/{日期}.status`）
-- **远端实锤**：`git ls-remote origin` 的 main HEAD 与本地克隆 HEAD 一致（GitHub TLS 间歇抽风时本地成功≠远端成功）
+- **查（云侧）**：`status.json` 的 `site.synced == true`（exporter 已代跑 ls-remote 比对 origin/local；`null` = 当轮 ls-remote 失败，回退 C4 HTTP 判定）且 `site.weekly_post_26h != null`（subject 形如 `技术周报 YYYY-Www`）
+- **查（内网，深度核查）**：站点克隆内 `git -C /airuntime/workspace/kyd-w.github.io log --oneline --since='26 hours ago' -- _posts` 出现 `技术周报 YYYY-Www` commit（`run_health.sh` 每晚 23:50 已自动做此检查并落 `health/{日期}.status`）；`git ls-remote origin` 的 main HEAD 与本地克隆 HEAD 一致（GitHub TLS 间歇抽风时本地成功≠远端成功）
+- **通道信号**：`last_push.result`（`fail inbox` = 收件箱同步通道有未推遗留；`fail exporter` = status 通道自身未推通——此时本 JSON 也是陈旧的，先看 `generated_at` 判断新鲜度）
 - **失败处置**：手动重推（可挂后台循环自愈）：`cd /airuntime/workspace/kyd-w.github.io && timeout 120 git push origin main:main`
 
 ### C4 · 线上 200 吗
@@ -66,9 +69,9 @@
 
 | 检查项 | 机械可查性 | agent 化备注 |
 |---|---|---|
-| C1 | 文件存在 + 字段断言 | 需 38服务器 SSH（内网）；云沙箱 agent 够不到 → 依赖点位 3（status JSON 出内网） |
+| C1 | 文件存在 + 字段断言 | 云侧读 `status.json` tasks 字段（点位 3 已出内网）；日志全链深度核查仍需内网 SSH |
 | C2 | JSON 解析 + 章节标题断言 | 纯读，随时可移交 |
-| C3 | git log + ls-remote 比对 | 公开仓挂载即可查远端；本地克隆部分依赖内网 |
+| C3 | git log + ls-remote 比对 | 云侧读 `status.json` site 字段（origin/local 对齐由 exporter 代查）；本地克隆核查仍需内网 |
 | C4 | HTTP GET + 正文断言 | 纯读，随时可移交 |
 | C5 | 半判断（区分"设计内降级"与异常） | 规则已表化，可先移交后人工抽查 |
 
