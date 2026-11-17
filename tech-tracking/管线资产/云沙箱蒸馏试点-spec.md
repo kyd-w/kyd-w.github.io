@@ -12,7 +12,7 @@
 |---|---|
 | 首期课题 | 自我进化智能体跟踪（单课题试点，稳定后扩至 4 课题全量） |
 | 时机 | 每周一 03:00 (+08:00)——周日 01:30 周报合成 → 01:35 status 导出 → Pages 构建 → 03:00 蒸馏，全链留缓冲 |
-| 载体 | Managed Agents cron deployment（beta）：云沙箱 + 公开仓挂载。云沙箱够不到内网——巡检信号已由 `techradar-status/status.json` 出内网（点位 3），本试点不再依赖内网 |
+| 载体 | **自建 DeepSeek 工具回路 agent**（2026-11-17 用户决策，弃 Managed Agents）：`distill/agent.py` 跑在 38服务器本地 systemd timer——本地站点克隆即全部输入，**PAT 需求取消**；与"被脚本调用的 LLM"的分界=工具有（read 白名单/write_draft/abort）、迭代有（≤24 轮）、自检有（harness 确定性验收+返工一轮），git 全在 harness |
 | 人工保留 | 见文末「人工保留项」 |
 
 ## 输入（全部公开面，挂载仓内路径）
@@ -54,7 +54,7 @@
 - **推送**：`weekly-draft` 分支 ONLY。commit message：`draft: W{ww} 自我进化蒸馏草稿 by sandbox ({ISO 时间})`
 - **禁止**：push main/master；修改 `_posts/`、`techradar-status/`、其他课题目录、`_config.yml`、本 spec；新建分支；改写非本人 commit
 - **幂等**：同周重跑允许 force-with-lease 覆盖自己的草稿 commit
-- **PAT**：fine-grained，仅 `kyd-w/kyd-w.github.io` 一仓，Contents: Read+Write，无 Administration/Workflows 权限——权限面最小化，凭据经 environment 注入不进 prompt/日志
+- **凭据**：~~fine-grained PAT~~（随载体变更取消）——agent 在 38服务器本地跑，读本地克隆、推 weekly-draft 走 Pi 既有推送凭据；模型 API key 在 `config/env`（`DISTILL_API_KEY`，不进仓不进 prompt）
 
 ## 自检（推 draft 前必过，rubric 镜像）
 
@@ -69,16 +69,17 @@
 
 合入决定（weekly-draft → 控制面 main 的搬运与正式命名）｜🚨 判定复核｜置信度升级｜README 活文档更新（首期草稿只出新快照文件）｜spec/playbook/rubric 三资产本身的修改
 
-## 部署参数（待用户提供 Anthropic API key 后创建）
+## 部署参数（已实装，2026-11-17 载体变更后）
 
 | 项 | 值 | 依据 |
 |---|---|---|
-| Agent | 创建一次，system prompt = 本 spec 全文引用；`model: claude-opus-4-8`，effort high | 蒸馏是判断密集环节（增量判定/口径修正/框架挂靠），不降级模型 |
-| Environment | GitHub repo mount（PAT 注入） | 云沙箱无内网访问，点位 3 已消除内网依赖 |
-| cron deployment | Mon 03:00 +08（±15% 抖动可接受） | 全链缓冲，见试点范围表 |
-| Memory Store | 游标 `last_distilled_week`（W46 起始） | P4 判据 + 跨 run 状态 |
-| Outcomes 质检器 | 自检清单为评分项；不通过自动返工 1 次，仍不过 → 留痕不推 | 验收门的现成载体 |
-| 成本量级 | 周频单次，读 ~10 万 token 级 → 月成本个位数美元（token + $0.08/会话小时） | 周频任务可忽略会话费 |
+| 实现 | `tools/pi_files/distill/agent.py`（harness+工具回路一体） | 自建=点位 5 三选项中的"Agent SDK 自建"轻量版 |
+| 模型 | `deepseek-chat`（chat completions + function calling） | 用户指定 DeepSeek；与周报合成同源可对照 |
+| 触发 | `systemd/user` 的 `techradar-distill.timer`（Mon 03:00，Persistent） | 全链缓冲，见试点范围表 |
+| 游标 | `~/techradar/health/distill.state`（周号，成功才前移；`--force` 供补跑/演练跳过 P1-P4） | 原 Memory Store 的本地等价物 |
+| 验收器 | harness 确定性校验（自检清单可机械化项：头部三件套/基线日期/URL 日期段/无内网泄漏），失败自动退回返工 1 轮，仍失败留痕不推 | 原 Outcomes 质检器的本地等价物 |
+| 读护栏 | read 白名单=克隆内 `tech-tracking/` `_posts/` `techradar-status/`，单文件 40K 字符截断，无 shell | 模型能力面最小化 |
+| 成本量级 | 周频单次，读 ~10 万 token 级 | 个位数人民币/月 |
 
 ## 相关
 
