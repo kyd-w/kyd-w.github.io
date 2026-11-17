@@ -49,7 +49,7 @@
 ## 产出与推送协议（硬约束）
 
 - **产出两个文件**：
-  1. `tech-tracking/自我进化智能体跟踪/草稿-W{ww}.md`——命名必须带「草稿-」前缀，**绝不占用正式快照的日期命名**
+  1. `tech-tracking/自我进化智能体跟踪/草稿-{ISO周号}.md`（如 `草稿-2026-W46.md`）——命名必须带「草稿-」前缀，**绝不占用正式快照的日期命名**
   2. `tech-tracking/管线资产/试点日志.md` 追加一行（周号/前置条件结果/自检结果/置信度分布/挂起建议）
 - **推送**：`weekly-draft` 分支 ONLY。commit message：`draft: W{ww} 自我进化蒸馏草稿 by sandbox ({ISO 时间})`
 - **禁止**：push main/master；修改 `_posts/`、`techradar-status/`、其他课题目录、`_config.yml`、本 spec；新建分支；改写非本人 commit
