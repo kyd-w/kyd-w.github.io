@@ -15,4 +15,6 @@
 | 2026-10-05 | [LocalAI](2026-10-05-LocalAI-项目调研.html) | 适配层/入口（私有 OpenAI 网关），非 LLM 运行容器；推理外包后端引擎 | 认知归档·两条触发线（ToG 无 GPU 环境/套餐 B 多客户分账） |
 | 2026-11-02 | [AI技术热点全景扫描](AI技术热点全景扫描-2026-11-02.html) | 决策模型之外 8 条主线月度扫描（模型效率战/常驻智能体/世界模型/端侧下沉等） | 周期性（每月） |
 
-持续跟踪目录：[Agent范式跟踪/](Agent范式跟踪/README.html)（伞形活文档：三特征范式假设 + 7 维度 + 可证伪信号 + 范式漂移风险）｜ [Jev跟踪/](Jev跟踪/README.html)（决策模型/System One，含 Laya 等开源对标专项）｜ [自我进化智能体跟踪/](自我进化智能体跟踪/README.html)（载体换代史：OpenClaw→爱马仕→DS Harness）——周报巡检课题以 [_topics.yaml](_topics.yaml) 为准
+持续跟踪目录：[Agent范式跟踪/](Agent范式跟踪/README.html)（伞形活文档：三特征范式假设 + 7 维度 + 可证伪信号 + 范式漂移风险）｜ [Jev跟踪/](Jev跟踪/README.html)（决策模型/System One，含 Laya 等开源对标专项）｜ [自我进化智能体跟踪/](自我进化智能体跟踪/README.html)（载体换代史：OpenClaw→爱马仕→DS Harness）｜ [安全风险跟踪/](安全风险跟踪/README.html)（AI 冲击攻防格局 + AI 自身新攻击面）——周报巡检课题以 [_topics.yaml](_topics.yaml) 为准
+
+管线判断资产：[管线资产/](管线资产/)（TechRadar 3.5 代管线的显式化判断资产——[周报验收rubric](管线资产/周报验收rubric.html) / [周报蒸馏playbook](管线资产/周报蒸馏playbook.html)，自主化路径点位 1-2 产物）
