@@ -1,0 +1,31 @@
+{
+ "schema": 1,
+ "generated_at": "2026-11-18T08:02:49+08:00",
+ "tasks": {
+  "daily-collect": {
+   "ts": "2026-11-18T08:02:46",
+   "step": "collect.done",
+   "status": "ok",
+   "new_total": 28
+  },
+  "weekly-synth": {
+   "step": "none",
+   "status": "missing"
+  }
+ },
+ "inbox_sync": {
+  "last_commit_at": "2026-11-17T21:25:04+08:00",
+  "subject": "sync: tech-tracking from inbox (2026-11-17 21:25:04)"
+ },
+ "site": {
+  "local_main": "821ab87b8377265e670fd72beacc1b363a887bb3",
+  "weekly_post_26h": null,
+  "origin_main": null,
+  "synced": null
+ },
+ "mem_available_mb": 3425,
+ "last_push": {
+  "at": "2026-11-18",
+  "result": "08:00:39 ok inbox"
+ }
+}
