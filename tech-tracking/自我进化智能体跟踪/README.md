@@ -59,6 +59,7 @@
 | 2026-11-08 | [2026-11-08.md](2026-11-08.html) | W45 周报蒸馏（标题级待证实）：「学习循环标准化」watch 首次密集命中但均为散点（Astra 权重级/EvoGroup harness 级/GenericAgent 技能级）；编排 OS 化基建同批出现（Amazon Infinity/Rivet/Temporal）；Astra 为反共识信号（碰权重，粒度待核）；HyperVolve 大额融资；国内通稿两条待验证 |
 | 2026-11-14 | [2026-11-14.md](2026-11-14.html) | 🚨 第三深度（harness 自我改写）标准化收敛：Self-Harness 定名→Lilian Weng 工程化→DSH 创造模式（待验证）→Managed Agents Dreaming/Outcomes 平台原生；载体层 dsh-superagent（3 代官方常驻化，10-31 MIT）+ Hermes Cloud（2 代托管商业化）；无第 4 代信号，三路线在"常驻+自我改进"合流 |
 | 2026-11-15 | [2026-11-15.md](2026-11-15.html) | W46 蒸馏（无 🚨）：学习循环标准化散点 +2（智元 LIFE、SkillAnchor 跨模型技能互通）；首个可量化对照基准 Self-Reorganising 1.21x 超 FlashInfer（通稿类主张以此为尺）；平台吞并线三案例强化（百度 Famou 3.0/Salesforce R&D Agents/IBM+微软）——第 4 代判定证据继续偏向"平台吞并"但无产品级实锤；GenericAgent/EvoGroup 实测第三次顺延 |
+| 2026-11-17 | [2026-11-17.md](2026-11-17.html) | **点位 4 首期人工合入**（W46 蒸馏 agent 草稿 `ebe9d32` 产出 11-17、审合入 11-20）：事实集与 11-15 人工快照一致（无新事实），价值=agent 侧判断结构 + GAP-1/2 修复实证（四次顺延链数出、判断带 11-08 出处、watch 未命中如实记录）；合入时应用 11-18 修正清单（SkillAnchor 撤、EAT 真名+限定语、LIFE 收窄、GenericAgent 入表 2.7 行）并修两处已知瑕疵（基线语义、.html 链接）；🚨 提议复核=不采纳 |
 | 2026-11-18 | [2026-11-18.md](2026-11-18.html) | **B 线欠账全清专题**（两波 7 实体全验：三仓四顺延红线 + W46 条目/Raven 尺子各二顺延同日清）：Astra=周报改名→真身 **WSP 权重直接编辑实证**（反共识通路打开，两重降速随行）；GenericAgent **实证**入表 2.7 行；EvoGroup 部分实证（代码未兑现）；LIFE 部分实证（技能环 paperware，归类收窄）；**SkillAnchor 实体不存在**（失真第 4 例，撤）；Raven 双层拆分（"L3"通稿 0/3 / 离线 harness 进化 2.5/3，11-02 挂起关闭）；1.21x 尺子真身=EAT/Berkeley（够格，引用必带"匹配预算 0.72x 低于专家 kernel"限定语；且与 11-08 W45 #4 同物跨周重复）。**累计实体级硬失真 4/7**——rubric C6 当日立项当日两验，另获 API 直查/同物异名两条方法纪律 |
 
 ## 更新约定
