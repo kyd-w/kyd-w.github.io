@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-20T08:02:20+08:00",
+ "generated_at": "2026-11-20T23:50:38+08:00",
  "tasks": {
   "daily-collect": {
    "ts": "2026-11-20T08:02:17",
@@ -14,18 +14,18 @@
   }
  },
  "inbox_sync": {
-  "last_commit_at": "2026-11-18T11:12:04+08:00",
-  "subject": "sync: tech-tracking from inbox (2026-11-18 11:12:04)"
+  "last_commit_at": "2026-11-20T17:42:04+08:00",
+  "subject": "sync: tech-tracking from inbox (2026-11-20 17:42:04)"
  },
  "site": {
-  "local_main": "5647163d291b3dd5e76cae3dbff5156c5308f16c",
+  "local_main": "93d22d98ee2de919a1419a6613ff3b5fa2e081aa",
   "weekly_post_26h": null,
-  "origin_main": "5647163d291b3dd5e76cae3dbff5156c5308f16c",
+  "origin_main": "93d22d98ee2de919a1419a6613ff3b5fa2e081aa",
   "synced": true
  },
- "mem_available_mb": 3409,
+ "mem_available_mb": 3483,
  "last_push": {
   "at": "2026-11-20",
-  "result": "08:00:04 ok inbox"
+  "result": "23:48:04 ok inbox"
  }
 }
