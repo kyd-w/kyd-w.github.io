@@ -1,12 +1,12 @@
 {
  "schema": 1,
- "generated_at": "2026-11-20T23:50:38+08:00",
+ "generated_at": "2026-11-21T08:04:06+08:00",
  "tasks": {
   "daily-collect": {
-   "ts": "2026-11-20T08:02:17",
+   "ts": "2026-11-21T08:04:03",
    "step": "collect.done",
    "status": "ok",
-   "new_total": 34
+   "new_total": 25
   },
   "weekly-synth": {
    "step": "none",
@@ -18,14 +18,14 @@
   "subject": "sync: tech-tracking from inbox (2026-11-20 17:42:04)"
  },
  "site": {
-  "local_main": "93d22d98ee2de919a1419a6613ff3b5fa2e081aa",
+  "local_main": "597cf29e40a7c192c641c069c7db8d76df296e93",
   "weekly_post_26h": null,
-  "origin_main": "93d22d98ee2de919a1419a6613ff3b5fa2e081aa",
+  "origin_main": "597cf29e40a7c192c641c069c7db8d76df296e93",
   "synced": true
  },
- "mem_available_mb": 3483,
+ "mem_available_mb": 3414,
  "last_push": {
-  "at": "2026-11-20",
-  "result": "23:48:04 ok inbox"
+  "at": "2026-11-21",
+  "result": "08:00:04 ok inbox"
  }
 }
