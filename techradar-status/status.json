@@ -1,12 +1,12 @@
 {
  "schema": 1,
- "generated_at": "2026-11-22T01:36:57+08:00",
+ "generated_at": "2026-11-22T08:05:13+08:00",
  "tasks": {
   "daily-collect": {
-   "ts": "2026-11-21T08:04:03",
+   "ts": "2026-11-22T08:05:10",
    "step": "collect.done",
    "status": "ok",
-   "new_total": 25
+   "new_total": 22
   },
   "weekly-synth": {
    "ts": "2026-11-22T01:36:57",
@@ -20,17 +20,17 @@
   "subject": "sync: tech-tracking from inbox (2026-11-20 17:42:04)"
  },
  "site": {
-  "local_main": "59cde3453dc8094c493f284d73c9701f6fa43f2d",
+  "local_main": "3bd2013b729ff5819c83787825644bae8c27f28b",
   "weekly_post_26h": {
    "sha": "59cde3453dc8094c493f284d73c9701f6fa43f2d",
    "subject": "技术周报 2026-W47"
   },
-  "origin_main": "59cde3453dc8094c493f284d73c9701f6fa43f2d",
-  "synced": true
+  "origin_main": null,
+  "synced": null
  },
- "mem_available_mb": 3463,
+ "mem_available_mb": 3461,
  "last_push": {
   "at": "2026-11-22",
-  "result": "01:30:04 ok inbox"
+  "result": "08:04:05 ok inbox"
  }
 }
